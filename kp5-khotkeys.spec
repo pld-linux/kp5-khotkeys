@@ -9,7 +9,7 @@ Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	4e40165c6bef910a728bd17dbdc312df
+# Source0-md5:	7014f8129cfcf96119dfb3cc23da7ffb
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
