@@ -1,15 +1,15 @@
-%define		kdeplasmaver	5.4.0
+%define		kdeplasmaver	5.5.4
 %define		qtver		5.3.2
 %define		kpname		khotkeys
 
 Summary:	Hot keys handling
 Name:		kp5-%{kpname}
-Version:	5.4.0
+Version:	5.5.4
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	7014f8129cfcf96119dfb3cc23da7ffb
+# Source0-md5:	7dae9526e136fd1a842f83c33a703acb
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
@@ -21,6 +21,7 @@ BuildRequires:	kf5-ki18n-devel
 BuildRequires:	kf5-kio-devel
 BuildRequires:	kf5-kxmlgui-devel
 BuildRequires:	kf5-plasma-framework-devel
+BuildRequires:	kp5-plasma-workspace-devel
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	xz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -72,10 +73,11 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libkhotkeysprivate.so.5
 %attr(755,root,root) %{_libdir}/libkhotkeysprivate.so.*.*.*
 %attr(755,root,root) %{_libdir}/qt5/plugins/kcm_hotkeys.so
-%attr(755,root,root) %{_libdir}/qt5/plugins/kded_khotkeys.so
+%attr(755,root,root) %{_libdir}/qt5/plugins/kf5/kded/khotkeys.so
+#%%attr(755,root,root) %{_libdir}/qt5/plugins/kded_khotkeys.so
 %{_datadir}/dbus-1/interfaces/org.kde.khotkeys.xml
 %{_datadir}/khotkeys
-%{_datadir}/kservices5/kded/khotkeys.desktop
+#%%{_datadir}/kservices5/kded/khotkeys.desktop
 %{_datadir}/kservices5/khotkeys.desktop
 
 %files devel
