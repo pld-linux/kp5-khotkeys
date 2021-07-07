@@ -1,15 +1,15 @@
-%define		kdeplasmaver	5.22.2.1
+%define		kdeplasmaver	5.22.3
 %define		qtver		5.9.0
 %define		kpname		khotkeys
 
 Summary:	Hot keys handling
 Name:		kp5-%{kpname}
-Version:	5.22.2.1
+Version:	5.22.3
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	c92f2e446d2853babeaaade4b3af9a70
+# Source0-md5:	546e21f6c58be279ba8eed38791a2280
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
