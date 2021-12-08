@@ -5,13 +5,14 @@
 Summary:	Hot keys handling
 Name:		kp5-%{kpname}
 Version:	5.23.4
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
 # Source0-md5:	679e9b0049272f9dd09fd5aa196d4083
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
+BuildRequires:	kf5-kdelibs4support-devel
 BuildRequires:	cmake >= 2.8.12
 BuildRequires:	kf5-kcmutils-devel
 BuildRequires:	kf5-kdbusaddons-devel
