@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.27.4
+%define		kdeplasmaver	5.27.5
 %define		qtver		5.15.2
 %define		kpname		khotkeys
 
 Summary:	Hot keys handling
 Name:		kp5-%{kpname}
-Version:	5.27.4
-Release:	3
+Version:	5.27.5
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	e7129517724fe5a9428dd49bd4cd8c0c
+# Source0-md5:	bde2e79070e499d26586a480e9ee36a5
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	kf5-kdelibs4support-devel
